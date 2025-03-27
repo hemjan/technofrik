@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login / Sign Up - EONVERSE</title>
+    <style>
+        @keyframes backgroundAnimation {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(-45deg, #ff9a9e, #fad0c4, #fad0c4, #ffdde1);
+            background-size: 400% 400%;
+            animation: backgroundAnimation 10s ease infinite;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-image:url('https://rukminim2.flixcart.com/image/850/1000/poster/p/q/5/medium-poster759-space-project-creative-graphics-on-fine-art-original-imaes5gkszuaeyzt.jpeg?q=90&crop=false');
+            position:cover;
+                
+        }
+        .container {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+            text-align: center;
+            width: 350px;
+            color: white;
+        }
+        input {
+            width: 90%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+        }
+        input::placeholder {
+            color: white;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background: red;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        button:hover {
+            background: darkred;
+        }
+        .link {
+            color: lightgray;
+            cursor: pointer;
+        }
+        .go-next {
+            display: block;
+            margin: 30px auto;
+            padding: 15px 30px;
+            font-size: 18px;
+            background: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
+            text-align: center;
+            transition: 0.3s;
+        }
+
+        .go-next:hover {
+            background: #0056b3;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Sign In</h2>
+        <input type="text" placeholder="Email" id="email">
+        <input type="password" placeholder="Password" id="password">
+        <div>
+            <input type="checkbox" id="remember"> <label for="remember">Remember me</label>
+        </div>
+        <button onclick="login()">Sign In</button>
+        <p><span class="link" onclick="forgotPassword()">Forgot password?</span></p>
+        <p>Don't have an account? <span class="link">Sign up</span></p>
+    </div>
+    
+    <script>
+        function login() {
+            alert("Login functionality coming soon!");
+        }
+        function forgotPassword() {
+            alert("Password reset link will be sent to your email.");
+        }
+        
+    </script>
+    <a href="index1.html">GO TO NEXT</a>
+</body>
+</html>

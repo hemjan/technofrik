@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EONVERSE - AI & 3D Innovation</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background: url('https://t4.ftcdn.net/jpg/07/85/49/13/360_F_785491346_HhprqgkfmFvzKF0b50glOAGNRURyutHr.jpg') no-repeat center center fixed;
+            background-size: cover;
+            animation: backgroundAnimation 10s ease infinite;
+            color: white;
+            position:cover;
+        }
+
+        @keyframes backgroundAnimation {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 50px;
+            background: rgba(0, 0, 0, 0.8);
+            color: white;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .hero {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            padding: 20px;
+        }
+
+        .hero h1 {
+            font-size: 50px;
+            font-weight: 600;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        .hero p {
+            font-size: 20px;
+            max-width: 600px;
+            margin-top: 10px;
+            animation: fadeIn 3s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            0% { opacity: 0; transform: translateY(-20px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+
+        .section {
+            padding: 100px 50px;
+            text-align: center;
+            background: rgba(0, 0, 0, 0.7);
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 30px;
+            background: #ff5500;
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            border-radius: 25px;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #ff7733;
+        }
+
+        .stats {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            margin-top: 30px;
+        }
+
+        .stat-box {
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 10px;
+            width: 200px;
+        }
+
+        .video-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.8);
+            color: white;
+        }
+        .go-next {
+            display: block;
+            margin: 30px auto;
+            padding: 15px 30px;
+            font-size: 18px;
+            background: white;
+            color: black;
+            text-decoration: none;
+            border-radius: 30px;
+            text-align: center;
+            transition: 0.3s;
+        }
+
+        .go-next:hover {
+            background: white;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <h2>EONVERSE</h2>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#Mission">Solutions</a></li>
+            <li><a href="#Vision">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <h1>Welcome to EONVERSE</h1>
+        <p>Guiding businesses through digital transformation with AI and Data</p>
+        <a href="#features" class="btn">Explore More</a>
+    </section>
+
+    <!-- About AI & Data -->
+    <section class="section">
+        <h2>Why AI & Data Matter?</h2>
+        <p>At Eonverse AI, we integrate cutting-edge technology to drive business innovation and efficiency.</p>
+        <div class="stats">
+            <div class="stat-box">
+                <h3>35%</h3>
+                <p>Optimized operational costs using predictive maintenance.</p>
+            </div>
+            <div class="stat-box">
+                <h3>65%</h3>
+                <p>Reduction in data errors with automated validation.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="section">
+        <h2>Our Features</h2>
+        <p>Harness the power of AI-driven solutions for a smarter future.</p>
+        <ul>
+            <li>Generative AI & LLM Models</li>
+            <li>Machine Learning & Deep Learning</li>
+            <li>Data Analysis & Visualization</li>
+        </ul>
+    </section>
+
+    <!-- Solutions Section -->
+    <section id="Mission" class="section">
+        <h2>Comprehensive AI Solutions</h2>
+        <p>Delivering tailored AI-powered solutions across industries.</p>
+        <div>
+            <h3>01. Multimodal</h3>
+            <p>Combine text, image, and video data to unlock deeper insights.</p>
+            <h3>02. Computer Vision</h3>
+            <p>Automate image analysis and enhance security.</p>
+            <h3>03. Audio</h3>
+            <p>Transform audio data with speech recognition & sentiment analysis.</p>
+            <h3>04. Tabular</h3>
+            <p>Leverage structured data analysis for strategic decision-making.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="Vision" class="section">
+        <h2>Contact Us</h2>
+        <p>Discuss your AI transformation with our experts.</p>
+        <p><strong>Email:</strong> connect@eonverse.ai</p>
+        <p><strong>Phone:</strong> +91 9173457840</p>
+        <p><strong>Location:</strong> Gandhinagar, Gujarat, INDIA</p>
+        <div>
+            <a href="https://twitter.com" class="btn">Twitter</a>
+            <a href="https://linkedin.com" class="btn">LinkedIn</a>
+            <a href="https://instagram.com" class="btn">Instagram</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 Eonverse.ai. All Rights Reserved.</p>
+        <br>
+        <a href="index2.html" class="go-next">GO TO NEXT</a> 
+    </footer>
+
+</body>
+</html>

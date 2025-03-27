@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Mission - EONVERSE</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #121212;
+            margin: 0;
+            padding: 0;
+            color: white;
+            text-align: center;
+            overflow-x: hidden;
+            background-image: url('https://png.pngtree.com/thumb_back/fh260/background/20230705/pngtree-futuristic-techno-mega-city-glowing-smart-building-with-advanced-technology-3d-image_3815191.jpg');
+            background-size:cover;
+            display:flex;
+            flex-direction:column;
+            
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background: rgba(0, 0, 0, 0.9);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 10;
+        }
+        .navbar .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: white;
+        }
+        .container {
+            padding: 100px 50px;
+        }
+        .section {
+            margin: 40px auto;
+            max-width: 800px;
+            background: black;
+            padding: 20px;
+            border-radius: 10px;
+            perspective: 1000px;
+            transform-style: preserve-3d;
+            transition: transform 0.5s, box-shadow 0.5s;
+            box-shadow: 0 4px 10px rgba(255, 255, 255, 0.3);
+        }
+        .section:hover {
+            transform: scale(1.05) rotateY(5deg);
+            box-shadow: 0 10px 20px rgba(255, 255, 255, 0.6);
+        }
+        .section img {
+            width: 80px;
+            height: 80px;
+            filter: drop-shadow(2px 4px 6px white);
+        }
+        .footer {
+            background: rgba(0, 0, 0, 0.9);
+            padding: 40px;
+            position: relative;
+            margin-top: 50px;
+            font-size: 18px;
+        }
+        @keyframes floating {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+        .floating {
+            animation: floating 3s infinite ease-in-out;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">EONVERSE</div>
+    </div>
+
+    <div class="container">
+        <h1>Our Mission</h1>
+        
+        <div class="section floating">
+            <img src="https://cdn-icons-png.flaticon.com/512/1041/1041916.png" alt="Mission">
+            <h2>Mission</h2>
+            <p>We strive to revolutionize industries with AI-driven solutions that enhance efficiency and user experience.</p>
+        </div>
+
+        <div class="section floating">
+            <img src="https://cdn-icons-png.flaticon.com/512/1581/1581633.png" alt="Vision">
+            <h2>Vision</h2>
+            <p>To create a future where AI seamlessly collaborates with humans to unlock new potentials.</p>
+        </div>
+
+        <div class="section floating">
+            <img src="https://cdn-icons-png.flaticon.com/512/2907/2907309.png" alt="Values">
+            <h2>Values</h2>
+            <p>We uphold innovation, customer-centricity, ethical AI development, and global impact.</p>
+        </div>
+
+        <div class="section floating">
+            <img src="https://cdn-icons-png.flaticon.com/512/3135/3135706.png" alt="Goals">
+            <h2>Goals</h2>
+            <p>Our goal is to drive businesses forward with cutting-edge AI technology and data intelligence.</p>
+        </div>
+
+        <div class="section floating">
+            <img src="https://cdn-icons-png.flaticon.com/512/1041/1041916.png" alt="Strategies">
+            <h2>Strategies</h2>
+            <p>We integrate AI with data-driven insights to optimize operations and create smarter solutions.</p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2025 EONVERSE. All rights reserved.</p>
+    </div>
+</body>
+</html>
